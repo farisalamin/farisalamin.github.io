@@ -4,28 +4,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Faris Alamin</title>
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Archivo:wght@400;700&family=Rajdhani:wght@300;500&display=swap" rel="stylesheet">
   <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"> -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="py-5 text-center">
-    <img class="header-logo mb-4" src="images/fa_logo_white.png" alt="FA Logo">
+  <div class="banner py-5">
+    <div class="container">
 
-    <div class="intro-card my-5 d-flex align-items-center justify-content-center">
+      <!-- NAVBAR -->
+      <nav class="d-flex justify-content-between">
+        <img class="header-logo mb-4" src="images/fa_logo_white.svg" alt="FA Logo">
 
-      <div class="frame d-inline-block p-2 mr-5 bg-white red-shadow">
-        <img class="photo" src="images/me.jpg" alt="Photo">
+        <div class="d-flex">
+          <ul class="nav-links list-unstyled">
+            <li><a href="" class="nav-link">About me</a></li>
+            <li><a href="" class="nav-link">Tech Skills</a></li>
+            <li><a href="" class="nav-link">Portfolio</a></li>
+            <li><a href="" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- MAIN INTRO -->
+      <div class="intro-card my-5 d-flex align-items-center justify-content-around">
+        <div class="intro">
+          <h1 class="mb-5">Hi, I'm <span class="red-highlight">Faris Alamin</span></h1>
+          <h1 class="mb-5 ml-5">a <span class="green-highlight ml-2">Full-Stack Web Developer</span></h1>
+        </div>
+
+        <div class="frame p-3 position-relative d-inline-block red-highlight">
+          <span class="handwriting ml-5">(This is me)<img src="images/arrow.png" alt="arrow"></span>
+          <img class="photo" src="images/me.jpg" alt="Photo">
+        </div>
       </div>
 
-      <div class="intro">
-        <h1>Faris Alamin</h1>
-        <p>Full-Stack Web Developer</p>
+      <!-- SUB INTRO -->
+      <div>
+        <p class="w-75 mx-auto border-top border-white pt-3 px-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit at commodi vitae magni consectetur earum cumque numquam! Fuga voluptatibus, aperiam eos natus doloribus sed quae assumenda aliquid inventore non ex!</p>
       </div>
 
     </div>
-
   </div>
 </body>
 </html>

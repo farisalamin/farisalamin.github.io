@@ -1,8 +1,36 @@
 body {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Rajdhani', sans-serif;
+  background-color: white;
+  color: white;
+  /*text-align: center;*/
+}
+
+.banner {
   background-color: #181818;
-  color: #F1DEDE;
-  text-align: center;
+}
+
+.nav-links li {
+  display: inline-block;
+}
+
+.nav-link {
+  color: white;
+  font-size: 20px;
+}
+
+.nav-link:hover {
+  color: red;
+}
+
+.intro {
+  width: 60%;
+}
+
+.intro h1 {
+  font-family: 'Archivo', sans-serif;
+  display: inline-block;
+  font-weight: 700;
+  letter-spacing: -1.5px;
 }
 
 .header-logo {
@@ -10,9 +38,38 @@ body {
 }
 
 .photo {
-  height: 200px;
+  height: 300px;
 }
 
-.red-shadow {
+.frame span {
+  position: absolute;
+  top: -80px;
+  left: -120px;
+}
+
+.frame span img {
+  width: 50px;
+  position: relative;
+  top: 40px;
+  right: 130px;
+}
+
+.red-highlight {
+  color: black;
+  padding: 8px;
+  background-color: white;
   box-shadow: 8px 8px red;
+}
+
+.green-highlight {
+  color: black;
+  padding: 8px;
+  background-color: white;
+  box-shadow: -8px 8px #33a777;
+}
+
+.handwriting {
+  font-family: 'Architects Daughter', cursive;
+  color: #8c95a6;
+  font-size: 28px;
 }
