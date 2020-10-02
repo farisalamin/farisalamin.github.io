@@ -1,6 +1,5 @@
 body {
   font-family: 'Rajdhani', sans-serif;
-  background-color: white;
   /*text-align: center;*/
 }
 
@@ -88,6 +87,10 @@ footer {
   font-size: 28px;
 }
 
+#projects, #references {
+  padding: 100px 0;
+}
+
 .project-card {
   height: 150px;
   width: 24%;
@@ -101,21 +104,52 @@ footer {
 
 #skills {
   background-color: #181818;
-  padding: 150px 0;
+  padding: 200px 0;
   color: white;
   -webkit-clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 calc(100% - 100px));
   clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 calc(100% - 100px));
 }
 
 .skill-card {
-  display: inline-block;
-  width: 48%;
+  width: 100%;
   height: 50px;
   background-color: rgba(255,255,255,0.2);
+  cursor: pointer;
+  opacity: 0.8;
 }
 
-#references {
-  padding: 100px 0;
+.skill-card:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.skill-card:hover {
+  opacity: 1;
+}
+
+.skill-card.active {
+  cursor: ;
+  opacity: 1;
+}
+
+.percent {
+  background-color: #33a777;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  font-size: 20px;
+}
+
+.skill-info {
+  display: none;
+  background-color: rgba(255,255,255,0.2);
+  width: 48%;
+  height: auto;
+  padding: 16px 24px;
+}
+
+.skill-info.active {
+  display: block;
 }
 
 .reference-card {
@@ -127,7 +161,7 @@ footer {
 #contact {
   background-color: #181818;
   color:white;
-  padding: 100px 0;
+  padding: 150px 0 100px 0;
   -webkit-clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 100%);
   clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 100%);
 }

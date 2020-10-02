@@ -20,10 +20,10 @@
 
         <div class="d-flex">
           <ul class="nav-links list-unstyled">
-            <li><a href="" class="nav-link">Home</a></li>
-            <li><a href="" class="nav-link">Portfolio</a></li>
-            <li><a href="" class="nav-link">Skills</a></li>
-            <li><a href="" class="nav-link">Contact</a></li>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="#projects" class="nav-link">Portfolio</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -36,7 +36,7 @@
           <p class="mt-5 py-4 px-5">I'm a recent graduate of Le Wagon bootcamp, where I finished top of my class. I am primarily a back end Rails developer with some design skills — this entire site was designed by me. My passion is for speed and utility, I like making applications that are as easy to use as possible.</p>
         </div>
 
-        <div class="frame p-3 position-relative d-inline-block red-highlight">
+        <div class="frame align-self-start p-3 position-relative d-inline-block red-highlight">
           <!-- <span class="handwriting ml-5">(This is me)<img src="images/arrow.svg" alt="arrow"></span> -->
           <img class="photo" src="images/me.jpg" alt="Photo">
         </div>
@@ -45,7 +45,7 @@
     </div>
   </div>
 
-  <div id="projects" class="py-5">
+  <div id="projects">
     <div class="container">
       <h1>Featured Projects</h1>
       <div class="projects d-flex justify-content-between my-3">
@@ -54,25 +54,47 @@
         <div class="project-card px-3 py-2">Featured Project 3</div>
         <div class="project-card px-3 py-2">Featured Project 4</div>
       </div>
-      <h3><a href="">See my full portfolio here..</a></h3>
+      <h3><a href="portfolio.html">See my full portfolio here..</a></h3>
     </div>
   </div>
 
   <div id="skills">
     <div class="container">
       <h1>Tech Skills</h1>
-      <div class="grid">
-        <div class="skill-card"></div>
-        <div class="skill-card"></div>
-        <div class="skill-card"></div>
-        <div class="skill-card"></div>
-        <div class="skill-card"></div>
-        <div class="skill-card"></div>
-        <div class="skill-card"></div>
-        <div class="skill-card"></div>
-        <div class="skill-card"></div>
-        <div class="skill-card"></div>
+      <div class="d-flex justify-content-between mt-4 w-100">
+        <!-- SKILL LIST -->
+        <div class="skill-list w-50">
+          <div id="python" class="skill-card active">
+            <div class="percent" style="width: 80%;"><span>Python</span></div>
+          </div>
+          <div id="ruby-skill" class="skill-card">
+            <div class="percent" style="width: 80%;"><span>Rails (Ruby)</span></div>
+          </div>
+          <div id="javascript-skill" class="skill-card">
+            <div class="percent" style="width: 50%;"><span>Javascript (ES6)</span></div>
+          </div>
+          <div id="sql-skill" class="skill-card">
+            <div class="percent" style="width: 60%;"><span>SQL (SQLite, PostGreSQL)</span></div>
+          </div>
+          <div id="html-skill" class="skill-card">
+            <div class="percent" style="width: 80%;"><span>HTML5</span></div>
+          </div>
+          <div id="css-skill" class="skill-card">
+            <div class="percent" style="width: 60%;"><span>CSS3</span></div>
+          </div>
+        </div>
+        <!-- SKILL INFO -->
+        <div id="python-info" class="skill-info active">
+          <h3>Python</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate minus maiores aliquam vel optio accusamus reprehenderit quidem labore distinctio magnam, a est numquam. Sint doloribus ratione atque, necessitatibus temporibus totam.</p>
+        </div>
+        <div id="ruby-info" class="skill-info"></div>
+        <div id="javascript-info" class="skill-info"></div>
+        <div id="sql-info" class="skill-info"></div>
+        <div id="html-info" class="skill-info"></div>
+        <div id="css-info" class="skill-info"></div>
       </div>
+
     </div>
   </div>
 
